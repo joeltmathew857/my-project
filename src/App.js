@@ -1,11 +1,18 @@
 import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Hero />
+      <Features />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
